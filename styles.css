@@ -1389,6 +1389,17 @@ img {
 /* ===========================
    Responsive
    =========================== */
+.mobile-menu-btn {
+  display: none;
+  background: transparent;
+  color: var(--text-white);
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1001; /* Keeps button above dropdown */
+  transition: transform 0.3s ease;
+}
+
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -1408,8 +1419,47 @@ img {
     margin: 0 auto;
   }
 
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-links {
-    display: none;
+    position: absolute;
+    top: 100%; /* Dropdown just below the fixed navbar */
+    left: 0;
+    width: 100%;
+    background: var(--nav-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 24px 0 32px;
+    gap: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    border-bottom: 1px solid var(--border-color);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 8px 24px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a::after {
+    display: none; /* remove hover line effect on mobile */
   }
 
   .who-content {
@@ -1504,8 +1554,8 @@ img {
   }
 
   .stats-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .stat-number {
@@ -1518,8 +1568,8 @@ img {
   }
 
   .insight-card {
-    min-width: calc(80% - 12px);
-    max-width: calc(80% - 12px);
+    min-width: 100%;
+    max-width: 100%;
   }
 
   .insights-header {
@@ -1530,7 +1580,16 @@ img {
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .footer-socials {
+    justify-content: center;
+  }
+  
+  .footer-contact .contact-item {
+    justify-content: center;
   }
 
   .footer-bottom {
