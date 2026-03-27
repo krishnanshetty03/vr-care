@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact VR Care - Let’s understand your hospital and explore how we can help." />
+  <title>Contact Us | VR Care Healthcare Operations</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300c9a7' rx='18' width='100' height='100'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-size='55' fill='white' font-weight='bold'>+</text></svg>" />
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html#hero" class="nav-logo">
+        <div class="nav-logo-icon">+</div>
+        <span class="nav-logo-text">VR Care</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        
+        <div class="nav-dropdown">
+          <a href="services.html">
+            Services
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-top: 2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="om.html">Hospital O&amp;M</a>
+            <a href="audit.html">Operational Audit</a>
+            <a href="turnaround.html">Turnaround</a>
+            <a href="planning.html">Project Planning</a>
+            <a href="accreditation.html">Accreditations</a>
+            <a href="feasibility.html">Feasibility</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="active">Contact Us</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="https://forms.gle/ZgWErbix4sa4V3zT7" target="_blank" class="nav-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Book Consultation
+      </a>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO -->
+  <section class="om-hero" style="padding: 160px 0 80px; text-align: center; position: relative; z-index: 1;">
+    <div class="container">
+      <div class="om-hero-content" style="max-width: 800px; margin: 0 auto;">
+        <div class="section-badge">CONTACT US</div>
+        <h1 class="om-hero-heading" style="margin-bottom: 24px;">
+          Get in Touch
+        </h1>
+        <p class="om-hero-sub" style="font-size: 20px; color: var(--text-white); margin-bottom: 16px;">
+          Let’s understand your hospital and explore how we can help.
+        </p>
+        <p class="om-hero-supporting" style="font-size: 16px; color: var(--text-light);">
+          Whether you are planning, running, or improving a hospital,<br/>a structured discussion is the first step.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPLIT LAYOUT: FORMS & CONTACT INFO -->
+  <section class="contact-layout">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- LEFT COLUMN: Main Form -->
+        <div class="contact-form-card">
+          <!-- SECTION 3: PRIMARY FORM -->
+          <h2 style="color: var(--text-white); font-size: 24px; font-weight: 700; margin-bottom: 30px;">Share Your Requirement</h2>
+          
+          <form onsubmit="event.preventDefault(); alert('Inquiry submitted successfully! A representative will contact you shortly.');">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="hospitalName">Hospital / Organization Name</label>
+                <input type="text" id="hospitalName" name="hospitalName" placeholder="Enter hospital name" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactCity">City</label>
+                <input type="text" id="contactCity" name="contactCity" placeholder="Enter your city" required />
+              </div>
+              <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="contactEmail" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="reqType">Type of Requirement</label>
+                <select id="reqType" name="reqType" required>
+                  <option value="" disabled selected>Select requirement...</option>
+                  <option value="Audit">Audit</option>
+                  <option value="O&M">O&amp;M</option>
+                  <option value="Feasibility / DPR">Feasibility / DPR</option>
+                  <option value="Turnaround">Turnaround</option>
+                  <option value="NABH / Accreditation">NABH / Accreditation</option>
+                  <option value="Project Planning">Project Planning</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bedStrength">Bed Strength <span style="font-weight: 400; color: var(--text-muted);">(Optional but useful)</span></label>
+              <input type="number" id="bedStrength" name="bedStrength" placeholder="e.g. 100" />
+            </div>
+
+            <!-- SECTION 4: SMART SEGMENTATION -->
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 24px; border-radius: 12px; margin: 30px 0;">
+              <h3 style="color: var(--primary-teal); font-size: 16px; margin-bottom: 20px; border-bottom: 1px solid rgba(0,201,167,0.2); padding-bottom: 10px;">Tell Us More (Optional)</h3>
+              
+              <div class="form-group">
+                <label>I am:</label>
+                <div class="radio-group-container">
+                  <label class="radio-option">
+                    <input type="radio" name="role" value="Hospital Owner" />
+                    <span>Hospital Owner</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="role" value="Doctor / Promoter" />
+                    <span>Doctor / Promoter</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="role" value="Administrator" />
+                    <span>Administrator</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="role" value="Investor" />
+                    <span>Investor</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="role" value="Trust / Institution" />
+                    <span>Trust / Institution</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="role" value="Other" />
+                    <span>Other</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top: 20px;">
+                <label>Current Stage:</label>
+                <div class="radio-group-container">
+                  <label class="radio-option">
+                    <input type="radio" name="stage" value="Planning a new hospital" />
+                    <span>Planning a new hospital</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="stage" value="Already operational" />
+                    <span>Already operational</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="stage" value="Facing challenges" />
+                    <span>Facing challenges</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="stage" value="Expansion stage" />
+                    <span>Expansion stage</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message / Brief Requirement</label>
+              <textarea id="contactMessage" name="contactMessage" placeholder="Tell us briefly about your challenges or goals..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta" style="width: 100%; border-radius: 10px; padding: 16px; font-size: 16px; margin-top: 10px;">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <!-- RIGHT COLUMN: Quick Contact & Expectations -->
+        <div>
+          <!-- SECTION 2: QUICK CONTACT OPTIONS -->
+          <div class="contact-info-card">
+            <h3 style="color: var(--text-white); font-size: 20px; font-weight: 700; margin-bottom: 10px;">Connect Directly</h3>
+            
+            <a href="https://wa.me/917304073040" target="_blank" class="btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; box-sizing: border-box; font-size: 15px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+              </svg>
+              WhatsApp: Click to Chat
+            </a>
+
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 10px;">
+              <div style="display: flex; align-items: center; gap: 12px; color: var(--text-light);">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0, 201, 167, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--primary-teal);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Call Us</div>
+                  <div style="font-size: 16px; font-weight: 600; color: var(--text-white);">+91 73040 73040</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 12px; color: var(--text-light);">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0, 201, 167, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--primary-teal);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Location</div>
+                  <div style="font-size: 15px; color: var(--text-white); line-height: 1.4;">First Floor, Pinnacle Business Park, Andheri East, Mumbai, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 6: EXPECTATION SETTING -->
+          <div class="contact-info-card" style="margin-top: 30px; background: rgba(255,255,255,0.02);">
+            <h3 style="color: var(--text-white); font-size: 18px; font-weight: 700; margin-bottom: 20px;">What Happens Next</h3>
+            <p style="color: var(--text-light); font-size: 14px; margin-bottom: 20px;">Once you submit your details:</p>
+            
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
+              <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--primary-teal); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0;">1</div>
+                Our team reviews your requirement
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--primary-teal); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0;">2</div>
+                We connect for an initial discussion
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--primary-teal); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0;">3</div>
+                We understand your hospital and challenges
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--primary-teal); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0;">4</div>
+                We suggest the right approach
+              </li>
+            </ul>
+          </div>
+
+          <!-- SECTION 7: TRUST LINE -->
+          <div style="margin-top: 30px; display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--text-muted); font-size: 13px; text-align: center; padding: 0 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>All discussions are handled with complete confidentiality and professionalism.</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: ALTERNATE CTA -->
+  <section class="srv-intro" style="background: #ffffff; padding: 80px 0;">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-heading-dark">Not Sure Where to Start?</h2>
+      <p style="color: #4a5568; font-size: 16px; margin: 20px auto 30px; max-width: 600px; line-height: 1.6;">
+        If you are unsure about your hospital’s current gaps,<br/>we recommend starting with a structured audit.
+      </p>
+      <a href="audit.html" class="btn-cta" style="border-color: var(--primary-teal); color: var(--bg-dark);">Request an Audit</a>
+    </div>
+  </section>
+
+  <!-- SECTION 8: MAP / LOCATION -->
+  <section style="background: #f7f9fc;">
+    <!-- Embed Google Map -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15080.208455799732!2d72.8596637!3d19.1053426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c83c27eb2aef%3A0x6b77df75db3c8065!2sPinnacle%20Business%20Park!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+      width="100%" 
+      height="450" 
+      style="border:0; display: block;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <!-- SECTION 9: FINAL CTA -->
+  <section class="cta-section" id="srv-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-heading">Let’s Take the First Step</h2>
+        <p class="cta-sub">A simple conversation can bring clarity to your next move.</p>
+        <div class="cta-buttons" style="position: relative; z-index: 10;">
+          <a href="tel:+917304073040" class="btn-cta">Call Now</a>
+          <a href="https://wa.me/917304073040" target="_blank" class="btn-secondary" style="border: 1px solid rgba(255,255,255,0.3); background: transparent; padding: 14px 28px; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; color: #fff;">WhatsApp</a>
+          <a href="#contact-form" class="btn-secondary" style="border: 1px solid rgba(255,255,255,0.3); background: transparent; padding: 14px 28px; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; color: #fff;" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Submit Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon-footer">+</div>
+            <span class="footer-logo-text">VR Care</span>
+          </div>
+          <p class="footer-tagline">Transforming Healthcare, One Hospital at a Time. India's trusted partner in hospital operations and excellence.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="audit.html">Audit</a></li>
+            <li><a href="planning.html">Project Planning</a></li>
+            <li><a href="feasibility.html">Feasibility</a></li>
+            <li><a href="turnaround.html">Turnaround</a></li>
+            <li><a href="accreditation.html">Accreditations</a></li>
+            <li><a href="om.html">Hospital O&amp;M</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="om.html">Hospital O&amp;M</a></li>
+            <li><a href="accreditation.html">NABH &amp; Compliance</a></li>
+            <li><a href="turnaround.html">Hospital Turnaround</a></li>
+            <li><a href="planning.html">Project Planning</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <a href="https://www.google.com/maps/search/Pinnacle+Business+Park,+Mahakali+Caves+Road,+Andheri+East,+Mumbai+400093" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><span>First Floor, Pinnacle Business Park, Mahakali Caves Road, Andheri East, Mumbai 400093</span></a>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 73040 73040</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>info@vrcare.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VR Care India. All Rights Reserved.</p>
+        <p class="footer-disclaimer">Disclaimer: All services are advisory and operational in nature. VR Care does not provide direct medical treatment or clinical care.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917304073040" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

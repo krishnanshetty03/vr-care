@@ -216,8 +216,13 @@ document.addEventListener('keydown', (e) => {
 // Open modal from all "Book Consultation" and "Book Free Consultation" buttons
 document.querySelectorAll('.btn-cta, .btn-primary, .btn-cta-partner').forEach(btn => {
   btn.addEventListener('click', (e) => {
-    // Skip if this is an external link (e.g. Google Forms on Leaders Circle page)
+    // Skip if this is an external link
     if (btn.getAttribute('target') === '_blank') return;
+    
+    // Skip if this is an internal page link (contains .html)
+    const href = btn.getAttribute('href');
+    if (href && href.includes('.html')) return;
+
     e.preventDefault();
     openModal();
   });

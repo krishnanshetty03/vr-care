@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About VR Care - Hospital operations and management consulting firm." />
+  <title>About VR Care | Healthcare Operations</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300c9a7' rx='18' width='100' height='100'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-size='55' fill='white' font-weight='bold'>+</text></svg>" />
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html#hero" class="nav-logo">
+        <div class="nav-logo-icon">+</div>
+        <span class="nav-logo-text">VR Care</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        
+        <div class="nav-dropdown">
+          <a href="services.html">
+            Services
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-top: 2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="om.html">Hospital O&amp;M</a>
+            <a href="audit.html">Operational Audit</a>
+            <a href="turnaround.html">Turnaround</a>
+            <a href="planning.html">Project Planning</a>
+            <a href="accreditation.html">Accreditations</a>
+            <a href="feasibility.html">Feasibility</a>
+          </div>
+        </div>
+
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="https://forms.gle/ZgWErbix4sa4V3zT7" target="_blank" class="nav-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Book Consultation
+      </a>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO -->
+  <section class="om-hero" style="padding: 160px 0 100px; text-align: center; position: relative; z-index: 1;">
+    <div class="container">
+      <div class="om-hero-content" style="max-width: 800px; margin: 0 auto;">
+        <div class="section-badge">ABOUT VR CARE</div>
+        <h1 class="om-hero-heading" style="margin-bottom: 24px;">
+          Building structured, compliant, and <span class="highlight">sustainable hospitals.</span>
+        </h1>
+        <p class="om-hero-sub" style="font-size: 20px; color: var(--text-white); margin-bottom: 16px;">
+          We combine real hospital operations experience with system-driven execution.
+        </p>
+        <p class="om-hero-supporting" style="font-size: 16px; color: var(--text-light);">
+          Our goal is to help healthcare institutions perform better from the ground up.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: WHO WE ARE -->
+  <section class="srv-intro" style="background: #ffffff; padding: 100px 0;">
+    <div class="container">
+      <div class="ap-why-content">
+        <div class="ap-why-left">
+          <div class="who-badge">WHO WE ARE</div>
+          <h2 class="section-heading-dark">Practical, System-Driven Healthcare Experts</h2>
+          <p class="ap-why-intro">
+            VR Care is a hospital operations and management consulting firm focused on building structured, efficient, and compliant healthcare institutions.
+          </p>
+          <div class="ap-why-closing" style="margin-top: 30px; font-size: 16px; color: var(--bg-dark); background: #f7f9fc; padding: 20px; border-radius: 12px; border-left: 4px solid var(--primary-teal);">
+            <strong>Our approach is practical, system-driven, and focused on long-term sustainability.</strong>
+          </div>
+        </div>
+        <div class="ap-why-right">
+          <h3 style="color: var(--bg-dark); font-size: 18px; margin-bottom: 20px; font-weight: 700;">We work with hospitals across different stages:</h3>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="fs-issue-item acc-benefit-item" style="align-items: center; border-radius: 12px; border: 1px solid #e8ecf1; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.borderColor='var(--primary-teal)'; this.style.boxShadow='0 4px 15px rgba(0,201,167,0.1)'" onmouseout="this.style.borderColor='#e8ecf1'; this.style.boxShadow='none'">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              <span style="font-size: 16px; font-weight: 600; color: #ffffff; margin-top: 0;">New hospital projects</span>
+            </div>
+            <div class="fs-issue-item acc-benefit-item" style="align-items: center; border-radius: 12px; border: 1px solid #e8ecf1; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.borderColor='var(--primary-teal)'; this.style.boxShadow='0 4px 15px rgba(0,201,167,0.1)'" onmouseout="this.style.borderColor='#e8ecf1'; this.style.boxShadow='none'">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              <span style="font-size: 16px; font-weight: 600; color: #ffffff; margin-top: 0;">Growing institutions</span>
+            </div>
+            <div class="fs-issue-item acc-benefit-item" style="align-items: center; border-radius: 12px; border: 1px solid #e8ecf1; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.borderColor='var(--primary-teal)'; this.style.boxShadow='0 4px 15px rgba(0,201,167,0.1)'" onmouseout="this.style.borderColor='#e8ecf1'; this.style.boxShadow='none'">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              <span style="font-size: 16px; font-weight: 600; color: #ffffff; margin-top: 0;">Underperforming hospitals</span>
+            </div>
+            <div class="fs-issue-item acc-benefit-item" style="align-items: center; border-radius: 12px; border: 1px solid #e8ecf1; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.borderColor='var(--primary-teal)'; this.style.boxShadow='0 4px 15px rgba(0,201,167,0.1)'" onmouseout="this.style.borderColor='#e8ecf1'; this.style.boxShadow='none'">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span style="font-size: 16px; font-weight: 600; color: #ffffff; margin-top: 0;">Trust and institutional setups</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: OUR EXPERIENCE -->
+  <section class="fs-framework" style="background: var(--bg-dark); padding: 100px 0;">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-badge">DECADES OF EXPERTISE</div>
+        <h2 class="section-heading-light">Our Experience</h2>
+        <p style="color: var(--text-light); text-align: center; max-width: 700px; margin: 0 auto; font-size: 16px;">
+          Our work is built on decades of real hospital experience. We bring both strategic thinking and ground-level execution experience.
+        </p>
+      </div>
+
+      <div class="ap-approach-timeline" style="grid-template-columns: repeat(3, 1fr); margin-top: 50px;">
+        <div class="ap-approach-step" style="background: var(--bg-card); border-color: var(--border-color);">
+          <div class="ap-step-marker"><span class="ap-step-num">25+</span></div>
+          <div class="ap-step-content">
+            <h3 style="color: var(--text-white);">Years in Operations</h3>
+            <p style="color: var(--text-light);">Deep expertise in hospital operations and management over 25+ years.</p>
+          </div>
+        </div>
+        <div class="ap-approach-step" style="background: var(--bg-card); border-color: var(--border-color);">
+          <div class="ap-step-marker"><span class="ap-step-num"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span></div>
+          <div class="ap-step-content">
+            <h3 style="color: var(--text-white);">Private, Trust &amp; Gov</h3>
+            <p style="color: var(--text-light);">Hands-on experience across private, trust, and government hospitals.</p>
+          </div>
+        </div>
+        <div class="ap-approach-step" style="background: var(--bg-card); border-color: var(--border-color);">
+          <div class="ap-step-marker"><span class="ap-step-num"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg></span></div>
+          <div class="ap-step-content">
+            <h3 style="color: var(--text-white);">Planning &amp; Execution</h3>
+            <p style="color: var(--text-light);">Involvement in planning and executing multiple hospital projects from ground zero.</p>
+          </div>
+        </div>
+        <div class="ap-approach-step" style="background: var(--bg-card); border-color: var(--border-color);">
+          <div class="ap-step-marker"><span class="ap-step-num"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span></div>
+          <div class="ap-step-content">
+            <h3 style="color: var(--text-white);">NABH &amp; Medico-Legal</h3>
+            <p style="color: var(--text-light);">Strong exposure to NABH accreditations, compliance, and medico-legal systems.</p>
+          </div>
+        </div>
+        <div class="ap-approach-step" style="background: var(--bg-card); border-color: var(--border-color);">
+          <div class="ap-step-marker"><span class="ap-step-num"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span></div>
+          <div class="ap-step-content">
+            <h3 style="color: var(--text-white);">Systems Coordination</h3>
+            <p style="color: var(--text-light);">Deep understanding of financial, operational, and clinical coordination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: OUR APPROACH -->
+  <section class="srv-approach" style="background: #f7f9fc; padding: 100px 0;">
+    <div class="container">
+      <div class="ap-why-content">
+        <div class="ap-why-left">
+          <div class="who-badge">OUR APPROACH</div>
+          <h2 class="section-heading-dark">How We Work</h2>
+          <p class="ap-why-intro">
+            We believe hospitals improve when systems improve. We do not rely on individual dependency. We build systems that sustain performance.
+          </p>
+        </div>
+        <div class="ap-why-right">
+          <ul class="ap-ideal-list" style="margin-top: 0;">
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <span>Clarity of processes</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <span>Defined roles and accountability</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>Structured workflows</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>Real-time visibility</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <span>Continuous monitoring</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: WHAT MAKES US DIFFERENT -->
+  <section class="fs-metrics" style="background: #ffffff; padding: 100px 0;">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-heading-dark">Why VR Care</h2>
+      </div>
+      <div class="fs-issue-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span style="font-size: 15px; color: #ffffff; font-weight: 600;">Hands-on operational experience, not just advisory</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span style="font-size: 15px; color: #ffffff; font-weight: 600;">Strong focus on system implementation</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span style="font-size: 15px; color: #ffffff; font-weight: 600;">Understanding of both clinical and business aspects</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span style="font-size: 15px; color: #ffffff; font-weight: 600;">Experience across different types of hospitals</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span style="font-size: 15px; color: #ffffff; font-weight: 600;">Integration of operations and technology</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span style="font-size: 15px; color: #ffffff; font-weight: 600;">Focus on compliance, quality, and sustainability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: LEADERSHIP -->
+  <section class="srv-leadership" style="background: var(--bg-dark); padding: 100px 0;">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-badge">LEADERSHIP</div>
+        <h2 class="section-heading-light">Our Leaders</h2>
+      </div>
+
+      <div class="ap-approach-timeline" style="grid-template-columns: repeat(2, 1fr); margin-top: 50px;">
+        <!-- Leader 1 -->
+        <div class="ap-approach-step" style="background: var(--bg-card); border-color: var(--border-color); display: flex; flex-direction: column;">
+          <div class="ap-step-content" style="flex-grow: 1;">
+            <h3 style="color: var(--text-white); font-size: 24px; margin-bottom: 4px;">Afzal Shaikh</h3>
+            <p style="color: var(--primary-teal); font-size: 16px; font-weight: 600; margin-bottom: 20px;">Hospital Operations &amp; Management Consultant</p>
+            <p style="color: var(--text-light); line-height: 1.6; margin-bottom: 24px;">
+              With over 25 years of experience in hospital administration and operations, Afzal Shaikh has worked across multiple healthcare institutions, helping them build systems, improve performance, and achieve structured growth.
+            </p>
+            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px;">
+              <h4 style="color: var(--text-white); font-size: 15px; margin-bottom: 12px;">His experience includes:</h4>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Hospital operations and management
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Planning and executing hospital projects
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Accreditation and compliance systems
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Revenue and profitability improvement
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Government and institutional healthcare exposure
+                </li>
+              </ul>
+            </div>
+            <p style="color: var(--text-white); margin-top: 24px; font-weight: 500;">He brings a practical, system-driven approach to hospital management.</p>
+          </div>
+        </div>
+        
+        <!-- Leader 2 -->
+        <div class="ap-approach-step" style="background: var(--bg-card); border-color: var(--border-color); display: flex; flex-direction: column;">
+          <div class="ap-step-content" style="flex-grow: 1;">
+            <h3 style="color: var(--text-white); font-size: 24px; margin-bottom: 4px;">Afia Shaikh</h3>
+            <p style="color: var(--primary-teal); font-size: 16px; font-weight: 600; margin-bottom: 20px;">Director – Healthcare Operations &amp; Digital Systems</p>
+            <p style="color: var(--text-light); line-height: 1.6; margin-bottom: 24px;">
+              Afia Shaikh focuses on operational systems, digital transformation, and workflow optimization.
+            </p>
+            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; margin-top: 36px;">
+              <h4 style="color: var(--text-white); font-size: 15px; margin-bottom: 12px;">Her work includes:</h4>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Process design and implementation
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Digital healthcare systems
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Patient and staff workflow optimization
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start; color: var(--text-muted); font-size: 14px;">
+                  <span style="color: var(--primary-teal);">✔</span> Integration of technology with operations
+                </li>
+              </ul>
+            </div>
+            <p style="color: var(--text-white); margin-top: 24px; font-weight: 500;">She supports hospitals in building efficient and user-friendly systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 & 8: OUR VISION & VALUES -->
+  <section class="srv-vision-values" style="background: #f7f9fc; padding: 100px 0;">
+    <div class="container">
+      <div class="ap-why-content">
+        <div class="ap-why-left">
+          <div class="who-badge">OUR VISION</div>
+          <h2 class="section-heading-dark">Consistent Quality Care</h2>
+          <p class="ap-why-intro">
+            To help build healthcare institutions that are structured, compliant, efficient, sustainable, and capable of delivering consistent quality care.
+          </p>
+        </div>
+        <div class="ap-why-right">
+          <h3 style="color: var(--bg-dark); font-size: 20px; margin-bottom: 24px; font-weight: 700;">Our Values</h3>
+          <ul class="ap-ideal-list" style="margin-top: 0;">
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Practical and honest approach</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Focus on long-term systems</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Commitment to quality and compliance</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Respect for healthcare professionals</span>
+            </li>
+            <li style="color: var(--bg-dark); font-weight: 500;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Responsibility towards patient safety</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: INSTITUTIONAL UNDERSTANDING -->
+  <section class="fs-metrics" style="background: #ffffff; padding: 100px 0;">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-heading-dark">Working Across Healthcare Systems</h2>
+        <p style="color: var(--text-muted); font-size: 16px; margin-top: 16px; max-width: 600px; margin-left: auto; margin-right: auto;">
+          We understand the complexity of different healthcare environments. Our approach adapts to each structure while maintaining system discipline and operational clarity.
+        </p>
+      </div>
+      <div class="fs-issue-grid" style="grid-template-columns: repeat(4, 1fr); margin-top: 40px;">
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1; background: #f7f9fc;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          <span style="font-size: 15px; color: #0b1120; font-weight: 600;">Private Hospitals</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1; background: #f7f9fc;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span style="font-size: 15px; color: #0b1120; font-weight: 600;">Trust &amp; Charitable Institutions</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1; background: #f7f9fc;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+          <span style="font-size: 15px; color: #0b1120; font-weight: 600;">Government Healthcare Systems</span>
+        </div>
+        <div class="fs-issue-item acc-benefit-item" style="border: 1px solid #e8ecf1; background: #f7f9fc;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-teal); flex-shrink: 0;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span style="font-size: 15px; color: #0b1120; font-weight: 600;">Institutional<br/>Setups</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: CTA -->
+  <section class="cta-section" id="srv-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-heading">Let’s Work Together</h2>
+        <p class="cta-sub">If you are looking to improve, build, or restructure your hospital, we can help bring clarity and structure to your systems.</p>
+        <div class="cta-buttons" style="position: relative; z-index: 10;">
+          <a href="contact.html" class="btn-cta">Contact Us</a>
+          <a href="https://forms.gle/ZgWErbix4sa4V3zT7" target="_blank" class="btn-secondary" style="border: 1px solid rgba(255,255,255,0.3); background: transparent; padding: 14px 28px; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; color: #fff;">Book Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon-footer">+</div>
+            <span class="footer-logo-text">VR Care</span>
+          </div>
+          <p class="footer-tagline">Transforming Healthcare, One Hospital at a Time. India's trusted partner in hospital operations and excellence.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="audit.html">Audit</a></li>
+            <li><a href="planning.html">Project Planning</a></li>
+            <li><a href="feasibility.html">Feasibility</a></li>
+            <li><a href="turnaround.html">Turnaround</a></li>
+            <li><a href="accreditation.html">Accreditations</a></li>
+            <li><a href="om.html">Hospital O&amp;M</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="om.html">Hospital O&amp;M</a></li>
+            <li><a href="accreditation.html">NABH &amp; Compliance</a></li>
+            <li><a href="turnaround.html">Hospital Turnaround</a></li>
+            <li><a href="planning.html">Project Planning</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <a href="https://www.google.com/maps/search/Pinnacle+Business+Park,+Mahakali+Caves+Road,+Andheri+East,+Mumbai+400093" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><span>First Floor, Pinnacle Business Park, Mahakali Caves Road, Andheri East, Mumbai 400093</span></a>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 73040 73040</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>info@vrcare.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VR Care India. All Rights Reserved.</p>
+        <p class="footer-disclaimer">Disclaimer: All services are advisory and operational in nature. VR Care does not provide direct medical treatment or clinical care.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919326330109" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
