@@ -182,6 +182,7 @@ const modal = document.getElementById('consultationModal');
 const modalClose = document.getElementById('modalClose');
 
 function openModal() {
+  if (!modal) return;
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -215,6 +216,8 @@ document.addEventListener('keydown', (e) => {
 // Open modal from all "Book Consultation" and "Book Free Consultation" buttons
 document.querySelectorAll('.btn-cta, .btn-primary, .btn-cta-partner').forEach(btn => {
   btn.addEventListener('click', (e) => {
+    // Skip if this is an external link (e.g. Google Forms on Leaders Circle page)
+    if (btn.getAttribute('target') === '_blank') return;
     e.preventDefault();
     openModal();
   });
@@ -224,6 +227,8 @@ document.querySelectorAll('.btn-cta, .btn-primary, .btn-cta-partner').forEach(bt
 const navBookBtn = document.querySelector('.nav-cta');
 if (navBookBtn) {
   navBookBtn.addEventListener('click', (e) => {
+    // Skip if this is an external link (e.g. Google Forms on Leaders Circle page)
+    if (navBookBtn.getAttribute('target') === '_blank') return;
     e.preventDefault();
     openModal();
   });
