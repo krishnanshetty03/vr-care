@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Global Healthcare Leaders Circle | Hospital Operations & Leadership Community</title>
+  <meta name="description" content="A curated global community of healthcare leaders focused on hospital operations, management, policy, and system transformation. Join a high-trust working circle." />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300c9a7' rx='18' width='100' height='100'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-size='55' fill='white' font-weight='bold'>+</text></svg>" />
+  
+  <style>
+    /* Specific styles for Leaders Circle Landing Page */
+    .hero-centered {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 180px;
+      padding-bottom: 80px;
+    }
+    .hero-centered .hero-heading {
+      font-size: 56px;
+      margin-bottom: 24px;
+    }
+    .hero-centered .hero-subheading {
+      margin: 0 auto 40px;
+      font-size: 22px;
+      max-width: 700px;
+    }
+    
+    .section-dark {
+      background: var(--bg-darker);
+      padding: 100px 0;
+      position: relative;
+    }
+    .section-light {
+      background: #ffffff;
+      color: #0b1120;
+      padding: 100px 0;
+      position: relative;
+    }
+    
+    .text-column {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .text-column-center {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+    .role-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(0, 201, 167, 0.15);
+      border-radius: 16px;
+      padding: 32px 24px;
+      transition: all 0.3s ease;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .role-card:hover {
+      border-color: rgba(0, 201, 167, 0.5);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 201, 167, 0.1);
+    }
+    .role-card svg {
+      color: var(--primary-teal);
+      margin-bottom: 16px;
+      width: 32px;
+      height: 32px;
+    }
+    .role-card h4 {
+      font-size: 18px;
+      color: var(--text-white);
+      line-height: 1.4;
+      font-weight: 600;
+    }
+    
+    .vr-care-branding {
+      border-left: 4px solid var(--primary-teal);
+      padding-left: 24px;
+      margin-top: 50px;
+      background: rgba(0, 201, 167, 0.03);
+      padding: 30px;
+      border-radius: 0 16px 16px 0;
+    }
+    
+    .problem-list .why-list-item {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .problem-list svg {
+      color: #e11d48; /* Red tint for problem cross */
+    }
+    
+    .benefit-list .why-list-item {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .benefit-list svg {
+      color: var(--primary-teal);
+    }
+
+    @media (max-width: 600px) {
+      .hero-centered {
+        padding-top: 140px;
+      }
+      .hero-centered .hero-heading {
+        font-size: 38px;
+      }
+      .hero-centered .hero-subheading {
+        font-size: 18px;
+      }
+      .roles-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">+</div>
+        <span class="nav-logo-text">VR Care</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">O&amp;M</a>
+        <a href="index.html#insights">Insights</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="https://forms.gle/ZgWErbix4sa4V3zT7" target="_blank" class="nav-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+        </svg>
+        Apply to Join
+      </a>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero hero-centered">
+    <div class="container">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        GLOBAL INITIATIVE
+      </div>
+      
+      <h1 class="hero-heading">Global Healthcare <span class="highlight">Leaders Circle</span></h1>
+      
+      <p class="hero-subheading">A closed working community of healthcare leaders focused on solving real system challenges.</p>
+      
+      <div class="text-column" style="margin-bottom: 40px; font-size: 18px; color: var(--text-light); border: 1px solid rgba(255,255,255,0.1); padding: 30px; border-radius: 16px; background: rgba(0,0,0,0.2);">
+        <p style="margin-bottom: 12px; font-weight: 500;">Not a networking group.</p>
+        <p style="margin-bottom: 24px; font-weight: 500;">Not a passive forum.</p>
+        <p style="font-size: 20px; color: var(--text-white); font-weight: 600;">A high-trust circle where leaders collaborate, share, and solve real problems across healthcare systems.</p>
+      </div>
+
+      <div class="hero-ctas" style="justify-content: center;">
+        <a href="https://forms.gle/ZgWErbix4sa4V3zT7" target="_blank" class="btn btn-primary" style="padding: 16px 36px; font-size: 16px;">Apply to Join</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: THE PROBLEM -->
+  <section class="section-light">
+    <div class="container">
+      <div class="text-column">
+        <div class="who-badge">THE PROBLEM</div>
+        <h2 class="who-heading">The Same Problems. Everywhere.</h2>
+        <p class="who-text" style="font-size: 18px; margin-bottom: 30px;">Across hospitals, healthcare systems, and regions, the same challenges keep repeating:</p>
+        
+        <ul class="why-list problem-list">
+          <li class="why-list-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="15" y1="9" x2="9" y2="15"></line>
+              <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg>
+            <span>Operational inefficiencies</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            <span>Financial leakages</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            <span>Policy vs execution gaps</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            <span>Workforce alignment issues</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            <span>Technology without structure</span>
+          </li>
+        </ul>
+
+        <p class="who-text" style="font-size: 20px; margin-top: 40px; font-weight: 700; color: #0b1120; padding: 20px; background: #f8fafc; border-left: 4px solid #0b1120;">
+          Despite experience and intent, most leaders are forced to solve these problems in isolation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: WHAT THIS IS -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="text-column">
+        <div class="section-badge">WHAT THIS IS</div>
+        <h2 class="section-heading-light" style="text-align: left; margin-bottom: 24px;">What This Community Is</h2>
+        <p style="font-size: 18px; color: var(--text-muted); margin-bottom: 12px; font-weight: 500 text-transform: uppercase;">This is not a discussion group.</p>
+        <p style="font-size: 22px; color: var(--text-white); margin-bottom: 40px; font-weight: 600;">This is a structured, high-trust working circle designed for:</p>
+
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="service-card" style="padding: 24px;">
+            <div class="service-icon" style="margin-bottom: 16px; width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="service-title" style="margin-bottom: 0;">Real problem-solving</h3>
+          </div>
+          <div class="service-card" style="padding: 24px;">
+            <div class="service-icon" style="margin-bottom: 16px; width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            </div>
+            <h3 class="service-title" style="margin-bottom: 0;">Practical insights</h3>
+          </div>
+          <div class="service-card" style="padding: 24px;">
+            <div class="service-icon" style="margin-bottom: 16px; width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="service-title" style="margin-bottom: 0;">System-level thinking</h3>
+          </div>
+          <div class="service-card" style="padding: 24px;">
+            <div class="service-icon" style="margin-bottom: 16px; width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="service-title" style="margin-bottom: 8px;">Shared learning</h3>
+            <p class="service-desc" style="font-size: 13px;">Across institutions and regions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHO THIS IS FOR -->
+  <section class="core-services" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">AUDIENCE</div>
+        <h2 class="section-heading-light">Who Should Join</h2>
+        <p style="color: var(--text-light); font-size: 18px; max-width: 600px; margin: 24px auto 0;">This community is designed for professionals directly involved in building, managing, or influencing healthcare systems:</p>
+      </div>
+
+      <div class="roles-grid">
+        <div class="role-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <h4>Hospital CEOs &amp; Founders</h4>
+        </div>
+        <div class="role-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <h4>Administrators &amp; Operations Leaders</h4>
+        </div>
+        <div class="role-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <h4>Nursing Leadership</h4>
+        </div>
+        <div class="role-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <h4>Government &amp; Public Health Professionals</h4>
+        </div>
+        <div class="role-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <h4>Policy Advisors &amp; Institutional Consultants</h4>
+        </div>
+        <div class="role-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <h4>Digital Health &amp; AI Experts</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: WHAT YOU WILL GET -->
+  <section class="section-light">
+    <div class="container">
+      <div class="text-column">
+        <div class="who-badge">BENEFITS</div>
+        <h2 class="who-heading">What Members Will Gain</h2>
+        
+        <ul class="why-list benefit-list" style="margin-top: 40px;">
+          <li class="why-list-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Real hospital case discussions with practical solutions</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Access to SOPs, audit frameworks &amp; governance structures</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Policy-level insights with execution clarity</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Cross-region collaboration and institutional connections</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Early access to healthcare AI, automation &amp; system tools</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Closed-door leadership discussions</span>
+          </li>
+          <li class="why-list-item">
+            <svg class="..." width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Structured problem-solving for real operational challenges</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: WHY THIS MATTERS -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="text-column-center">
+        <h2 class="section-heading-light" style="font-size: 42px; margin-bottom: 40px;">Why This Matters</h2>
+        <p style="font-size: 24px; color: var(--primary-teal); font-weight: 600; margin-bottom: 30px;">Healthcare systems do not fail due to lack of effort.</p>
+        <p style="font-size: 20px; color: var(--text-light); margin-bottom: 40px; line-height: 1.6;">They underperform due to lack of structured collaboration, shared learning, and system-driven thinking.</p>
+        <p style="font-size: 22px; color: var(--text-white); font-weight: 700; background: rgba(0,201,167,0.1); display: inline-block; padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(0,201,167,0.3);">This initiative is built to bridge that gap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 & 8: ABOUT -->
+  <section class="section-light">
+    <div class="container">
+      <div class="text-column">
+        <h2 class="who-heading" style="margin-bottom: 24px;">About the Initiative</h2>
+        <p class="who-text" style="font-size: 18px;">This initiative is built from decades of experience across private hospitals, government institutions, and healthcare systems.</p>
+        <p class="who-text" style="font-size: 18px;">The focus is on bringing structured thinking, operational clarity, and system-driven approaches into healthcare leadership conversations.</p>
+
+        <div class="vr-care-branding">
+          <h3 style="font-size: 20px; color: #0b1120; margin-bottom: 12px;">Supported by VR Care</h3>
+          <p class="who-text" style="margin-bottom: 16px;">VR Care focuses on hospital operations, management systems, audits, and healthcare transformation. Through its work across multiple institutions, VR Care has helped identify recurring system challenges and design structured solutions.</p>
+          <a href="index.html" class="who-link">Discover VR Care Services &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: FINAL CTA -->
+  <section class="cta-section" style="padding: 100px 0;">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-heading">Apply to Join the First Cohort</h2>
+        <p class="cta-sub" style="margin-bottom: 16px;">This community is being built in phases with a curated group of professionals.</p>
+        <p class="cta-sub" style="font-size: 18px; color: #fff;">If you are directly involved in healthcare systems and want to be part of meaningful, high-level discussions:</p>
+        
+        <div style="margin: 40px 0;">
+          <a href="https://forms.gle/ZgWErbix4sa4V3zT7" target="_blank" class="btn btn-primary" style="font-size: 18px; padding: 18px 48px; box-shadow: 0 10px 30px rgba(0, 201, 167, 0.4);">
+            Apply Now
+          </a>
+        </div>
+        
+        <p style="font-size: 13px; color: rgba(255,255,255,0.6); max-width: 400px; margin: 0 auto; line-height: 1.5;">All applications will be reviewed to ensure relevance and quality of discussions within the community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon-footer">+</div>
+            <span class="footer-logo-text">VR Care</span>
+          </div>
+          <p class="footer-tagline">Transforming Healthcare, One Hospital at a Time. India's trusted partner in hospital operations and excellence.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">O&amp;M Services</a></li>
+            <li><a href="index.html#insights">Knowledge Hub</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="#">Operations &amp; Management</a></li>
+            <li><a href="#">Revenue Optimization</a></li>
+            <li><a href="#">NABH Support</a></li>
+            <li><a href="#">Clinical Audits</a></li>
+            <li><a href="#">SOP Training</a></li>
+            <li><a href="#">Medico-Legal Protection</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col footer-contact">
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>First Floor, Pinnacle Business Park, Mahakali Caves Road, Andheri East, Mumbai 400093</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 73040 73040</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>info@vrcare.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VR Care India. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
