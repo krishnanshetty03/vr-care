@@ -137,7 +137,16 @@ img {
   align-items: center;
 }
 
-.nav-links {
+.nav-logo img {
+  height: 72px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: auto;
+}
   display: flex;
   align-items: center;
   gap: 32px;
