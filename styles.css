@@ -132,24 +132,9 @@ img {
   gap: 10px;
 }
 
-.nav-logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--primary-teal);
-  border-radius: 8px;
+.nav-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: var(--text-white);
-  font-weight: 700;
-}
-
-.nav-logo-text {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text-white);
-  letter-spacing: -0.3px;
 }
 
 .nav-links {
@@ -1511,24 +1496,9 @@ img {
   margin-bottom: 16px;
 }
 
-.logo-icon-footer {
-  width: 32px;
-  height: 32px;
-  background: var(--primary-teal);
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-}
 
-.footer-logo-text {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-}
+
+
 
 .footer-tagline {
   font-size: 13px;
