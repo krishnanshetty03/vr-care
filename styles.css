@@ -1531,6 +1531,15 @@ img {
   background: rgba(0, 201, 167, 0.1);
 }
 
+.footer-h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .footer-links {
   list-style: none;
   padding: 0;
