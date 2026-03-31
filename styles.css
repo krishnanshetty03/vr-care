@@ -1903,35 +1903,36 @@ img {
 
   .nav-links {
     position: absolute;
-    top: 100%; /* Dropdown just below the fixed navbar */
+    top: 100%;
     left: 0;
     width: 100%;
     background: var(--nav-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    display: none; /* Hide by default on mobile */
     flex-direction: column;
-    padding: 24px 0 32px;
-    gap: 24px;
+    padding: 24px 0;
+    gap: 16px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.6);
     border-bottom: 1px solid var(--border-color);
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-15px);
     transition: all 0.3s ease;
   }
 
   .nav-links.active {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+    display: flex; /* Show when active */
   }
 
   .nav-links a {
-    font-size: 16px;
-    padding: 8px 24px;
+    font-size: 15px;
+    padding: 12px 24px;
     display: block;
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
   }
 
   .nav-links a::after {
@@ -2035,6 +2036,24 @@ img {
 }
 
 @media (max-width: 600px) {
+  .nav-cta {
+    padding: 8px 14px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .nav-cta svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .nav-logo img {
+    height: 48px;
+  }
+
+  .nav-logo-text {
+    font-size: 18px;
+  }
   .hero-heading {
     font-size: 30px;
   }
