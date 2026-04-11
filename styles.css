@@ -280,8 +280,8 @@ img {
 
 .nav-cta:hover {
   background: var(--primary-teal-light);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(0, 201, 167, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 201, 167, 0.35);
 }
 
 .nav-cta svg {
@@ -399,6 +399,10 @@ img {
   box-shadow: 0 6px 24px rgba(0, 201, 167, 0.35);
 }
 
+.btn-primary:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
 .btn-outline {
   background: transparent;
   color: var(--text-white);
@@ -410,6 +414,10 @@ img {
   color: var(--primary-teal);
   transform: translateY(-2px);
   box-shadow: 0 6px 24px rgba(0, 201, 167, 0.1);
+}
+
+.btn-outline:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 /* Hero Right */
@@ -1172,14 +1180,20 @@ img {
 
 /* CTA outline variant */
 .btn-cta-outline {
-  background: transparent !important;
+  background: transparent;
   border: 2px solid #ffffff;
   color: #ffffff;
 }
 
 .btn-cta-outline:hover {
-  background: #ffffff !important;
-  color: #0b3d3a;
+  background: #ffffff;
+  color: #0b1120;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.btn-cta-outline:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .cta-buttons {
@@ -1486,20 +1500,27 @@ img {
 
 .btn-cta {
   display: inline-block;
-  padding: 14px 36px;
+  padding: 14px 38px;
   border: 2px solid #ffffff;
   border-radius: 50px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: transparent;
+  text-decoration: none;
 }
 
 .btn-cta:hover {
   background: #ffffff;
-  color: #0b3d3a;
+  color: #0b1120;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.btn-cta:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 /* ===========================
@@ -2546,7 +2567,8 @@ img {
   padding: 12px 0;
   border-bottom: 1px solid var(--border-color);
   font-size: 15px;
-  color: var(--text-light);
+  color: #1a202c;
+  font-weight: 500;
 }
 
 .ap-ideal-list li svg {
@@ -3737,3 +3759,203 @@ ul.om-list-light li::before {
   color: #0b1120;
   font-weight: 500;
 }
+
+/* O&M Tag List */
+.om-tags-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.om-tags-list li {
+  background: #f7f9fc;
+  border: 1px solid #e8ecf1;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #4a5568;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.om-tags-list li::before {
+  content: none;
+}
+
+.om-tags-list li:hover {
+  background: rgba(0, 201, 167, 0.05);
+  border-color: var(--primary-teal);
+  color: var(--primary-teal);
+}
+
+.om-list-light {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.om-list-light li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #1a202c;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.om-list-light li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-teal);
+  font-weight: 800;
+}
+
+
+/* ===========================
+   Premium O&M Model Cards
+   =========================== */
+.om-model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.om-model-card {
+  position: relative;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  height: 100%;
+}
+
+.om-model-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(0, 201, 167, 0.06), transparent 40%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.om-model-card:hover::after {
+  opacity: 1;
+}
+
+.om-model-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 201, 167, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 201, 167, 0.1);
+}
+
+.om-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.om-card-num {
+  font-size: 48px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.03);
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.om-model-card:hover .om-card-num {
+  color: rgba(0, 201, 167, 0.08);
+}
+
+.om-card-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 201, 167, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-teal);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.om-model-card:hover .om-card-icon {
+  background: var(--primary-teal);
+  color: white;
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.om-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.om-card-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.om-card-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.om-outcome-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-teal);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.om-outcome-text {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+  .om-model-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .om-model-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
