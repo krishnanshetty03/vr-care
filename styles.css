@@ -2686,6 +2686,10 @@ img {
   color: var(--primary-teal);
 }
 
+.nav-links a.active::after {
+  width: 100%;
+}
+
 /* ===========================
    FEASIBILITY PAGE STYLES
    =========================== */
