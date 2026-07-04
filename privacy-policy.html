@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | VR Care India</title>
+  <meta name="description" content="Read VR Care India's Privacy Policy to understand how we collect, use, and protect your personal information when you engage with our hospital management consulting services." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.vrcare.in/privacy-policy.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.vrcare.in/privacy-policy.html" />
+  <meta property="og:title" content="Privacy Policy | VR Care India" />
+  <meta property="og:description" content="Read VR Care India's Privacy Policy to understand how we collect, use, and protect your personal information." />
+  <meta property="og:image" content="https://www.vrcare.in/og-image.png" />
+  <meta property="og:site_name" content="VR Care India" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="logo.png" />
+  <style>
+    /* ===========================
+       Privacy Policy Page Styles
+       =========================== */
+    .legal-hero {
+      position: relative;
+      z-index: 1;
+      padding-top: 140px;
+      padding-bottom: 60px;
+      background: linear-gradient(180deg, rgba(0, 201, 167, 0.04) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .legal-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 201, 167, 0.1);
+      border: 1px solid rgba(0, 201, 167, 0.25);
+      color: var(--primary-teal);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .legal-hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      color: var(--text-white);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .legal-hero h1 span {
+      background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .legal-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .legal-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .legal-meta-item svg {
+      color: var(--primary-teal);
+      flex-shrink: 0;
+    }
+
+    /* ===========================
+       Legal Content Layout
+       =========================== */
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 60px;
+      align-items: start;
+      padding: 60px 0 100px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Table of Contents Sidebar */
+    .legal-toc {
+      position: sticky;
+      top: 100px;
+    }
+
+    .legal-toc-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary-teal);
+      margin-bottom: 16px;
+    }
+
+    .legal-toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-left: 2px solid var(--border-color);
+    }
+
+    .legal-toc-list li a {
+      display: block;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border-left: 2px solid transparent;
+      margin-left: -2px;
+      line-height: 1.4;
+    }
+
+    .legal-toc-list li a:hover {
+      color: var(--primary-teal);
+      border-left-color: var(--primary-teal);
+    }
+
+    /* Content Area */
+    .legal-content {
+      max-width: 760px;
+    }
+
+    .legal-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 100px;
+    }
+
+    .legal-section-num {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary-teal);
+      margin-bottom: 10px;
+    }
+
+    .legal-section h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-white);
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .legal-section p {
+      font-size: 15px;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .legal-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-section ul,
+    .legal-section ol {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+
+    .legal-section ul li,
+    .legal-section ol li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 15px;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .legal-section ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--primary-teal);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .legal-section ol {
+      counter-reset: legal-counter;
+    }
+
+    .legal-section ol li {
+      counter-increment: legal-counter;
+    }
+
+    .legal-section ol li::before {
+      content: counter(legal-counter) ".";
+      position: absolute;
+      left: 0;
+      color: var(--primary-teal);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .legal-highlight-box {
+      background: rgba(0, 201, 167, 0.05);
+      border: 1px solid rgba(0, 201, 167, 0.2);
+      border-left: 3px solid var(--primary-teal);
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .legal-highlight-box p {
+      margin-bottom: 0 !important;
+      font-size: 14px !important;
+      color: var(--text-light) !important;
+    }
+
+    .legal-highlight-box strong {
+      color: var(--primary-teal);
+    }
+
+    .legal-contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-top: 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .legal-contact-card .icon-wrap {
+      width: 48px;
+      height: 48px;
+      background: rgba(0, 201, 167, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary-teal);
+    }
+
+    .legal-contact-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 6px;
+    }
+
+    .legal-contact-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 6px !important;
+    }
+
+    .legal-contact-card a {
+      color: var(--primary-teal);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
+
+    .legal-contact-card a:hover {
+      color: var(--primary-teal-light);
+    }
+
+    /* ===========================
+       Responsive
+       =========================== */
+    @media (max-width: 900px) {
+      .legal-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .legal-toc {
+        position: static;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .legal-hero {
+        padding-top: 110px;
+        padding-bottom: 40px;
+      }
+
+      .legal-section h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="VR Care Logo">
+        <span class="nav-logo-text">VR Care</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="nav-dropdown">
+          <a href="services.html">
+            Services
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-top: 2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="hospital-operations-and-management/index.html">Hospital Operations &amp; Management</a>
+            <a href="hospital-operational-and-management-audit/index.html">Operational &amp; Management Audit</a>
+            <a href="hospital-o-and-m-pricing/index.html">Hospital O&amp;M Pricing</a>
+            <a href="hospital-turnaround-and-profitability/index.html">Turnaround &amp; Profitability</a>
+            <a href="new-hospital-project-planning/index.html">New Hospital Project Planning</a>
+            <a href="nabh-jci-and-international-healthcare-accreditations/index.html">NABH &amp; JCI Accreditations</a>
+            <a href="hospital-feasibility-study-dpr/index.html">Feasibility Study &amp; DPR</a>
+            <a href="global-healthcare-leaders-circle/index.html">Leaders Circle</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="#">
+            Brochures
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-top: 2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="VR-Care-Transforming-Hospitals-OM-and-Compliant-Systems.pdf" target="_blank">Transforming Hospitals O&amp;M and Compliant Systems</a>
+          </div>
+        </div>
+
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="https://calendly.com/afzal-vrcare/online-meet" class="nav-cta" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Book Consultation
+      </a>
+    </div>
+  </nav>
+
+  <!-- Legal Hero -->
+  <section class="legal-hero">
+    <div class="container">
+      <div class="legal-hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Legal
+      </div>
+      <h1>Privacy <span>Policy</span></h1>
+      <p style="font-size: 16px; color: var(--text-muted); max-width: 560px; line-height: 1.7; margin-top: 12px;">
+        We are committed to protecting your personal data. This policy explains how VR Care India collects, uses, and safeguards information you share with us.
+      </p>
+      <div class="legal-meta">
+        <div class="legal-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Effective Date: July 1, 2025
+        </div>
+        <div class="legal-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          Last Updated: July 1, 2025
+        </div>
+        <div class="legal-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Mumbai, Maharashtra, India
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal Content -->
+  <section style="position: relative; z-index: 1;">
+    <div class="container">
+      <div class="legal-layout">
+
+        <!-- Table of Contents -->
+        <aside class="legal-toc">
+          <p class="legal-toc-title">On this page</p>
+          <ul class="legal-toc-list">
+            <li><a href="#information-we-collect">1. Information We Collect</a></li>
+            <li><a href="#how-we-use">2. How We Use Your Information</a></li>
+            <li><a href="#sharing-information">3. Sharing of Information</a></li>
+            <li><a href="#data-security">4. Data Security</a></li>
+            <li><a href="#cookies">5. Cookies &amp; Tracking</a></li>
+            <li><a href="#your-rights">6. Your Rights</a></li>
+            <li><a href="#data-retention">7. Data Retention</a></li>
+            <li><a href="#third-party-links">8. Third-Party Links</a></li>
+            <li><a href="#children-privacy">9. Children's Privacy</a></li>
+            <li><a href="#changes">10. Changes to This Policy</a></li>
+            <li><a href="#contact-privacy">11. Contact Us</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="legal-content">
+
+          <div class="legal-highlight-box">
+            <p><strong>Summary:</strong> VR Care India ("we," "our," "us") respects your privacy. We only collect information necessary to provide our hospital management consulting services. We do not sell your data. This policy governs information collected through our website <a href="https://www.vrcare.in" style="color: var(--primary-teal);">www.vrcare.in</a> and any related communications.</p>
+          </div>
+
+          <!-- Section 1 -->
+          <div class="legal-section" id="information-we-collect">
+            <p class="legal-section-num">01 / 11</p>
+            <h2>Information We Collect</h2>
+            <p>We collect information in two primary ways: information you voluntarily provide to us, and information collected automatically when you visit our website.</p>
+
+            <p><strong style="color: var(--text-white);">Information You Provide Directly:</strong></p>
+            <ul>
+              <li>Full name, designation, and contact details (phone number, email address)</li>
+              <li>Hospital or clinic name, location, and size details</li>
+              <li>Messages and enquiries submitted via contact forms or WhatsApp</li>
+              <li>Consultation booking details via our Calendly scheduling link</li>
+              <li>Information provided during email or phone correspondence</li>
+            </ul>
+
+            <p><strong style="color: var(--text-white);">Information Collected Automatically:</strong></p>
+            <ul>
+              <li>IP address and approximate geographic location</li>
+              <li>Browser type, device type, and operating system</li>
+              <li>Pages visited, time spent on pages, and referral URLs</li>
+              <li>Interactions with forms, buttons, and downloads</li>
+            </ul>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="legal-section" id="how-we-use">
+            <p class="legal-section-num">02 / 11</p>
+            <h2>How We Use Your Information</h2>
+            <p>We use the information we collect solely for legitimate business purposes related to our consulting services. Specifically, we use your information to:</p>
+            <ul>
+              <li>Respond to your enquiries and facilitate consultations</li>
+              <li>Provide, deliver, and improve our hospital management consulting services</li>
+              <li>Schedule and manage consultation appointments</li>
+              <li>Send you service-related communications, updates, and follow-ups</li>
+              <li>Analyse website traffic and usage to improve the user experience</li>
+              <li>Comply with legal obligations and regulatory requirements applicable in India</li>
+              <li>Detect, prevent, and address technical issues or security threats</li>
+            </ul>
+            <p>We will never use your information for automated decision-making or profiling that produces legal or similarly significant effects without your explicit consent.</p>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="legal-section" id="sharing-information">
+            <p class="legal-section-num">03 / 11</p>
+            <h2>Sharing of Information</h2>
+            <p>VR Care India does not sell, rent, or trade your personal information to any third party. We may share your information only in the following limited circumstances:</p>
+            <ul>
+              <li><strong style="color: var(--text-white);">Service Providers:</strong> Trusted third-party tools and platforms we use to operate our business (e.g., email platforms, scheduling tools like Calendly, CRM software) — only to the extent necessary and under confidentiality obligations.</li>
+              <li><strong style="color: var(--text-white);">Legal Compliance:</strong> Where required by law, court order, or governmental authority under applicable Indian law.</li>
+              <li><strong style="color: var(--text-white);">Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, with appropriate notice to you.</li>
+              <li><strong style="color: var(--text-white);">With Your Consent:</strong> For any other purpose, only with your explicit prior consent.</li>
+            </ul>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="legal-section" id="data-security">
+            <p class="legal-section-num">04 / 11</p>
+            <h2>Data Security</h2>
+            <p>We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. These include:</p>
+            <ul>
+              <li>SSL/TLS encryption for data transmitted to and from our website</li>
+              <li>Access controls limiting who within our organisation can access personal data</li>
+              <li>Secure storage and handling practices for all client records</li>
+              <li>Regular review of our data collection, storage, and processing practices</li>
+            </ul>
+            <p>While we strive to protect your personal information, no method of transmission over the internet or electronic storage is 100% secure. We encourage you to report any security concerns to us immediately.</p>
+          </div>
+
+          <!-- Section 5 -->
+          <div class="legal-section" id="cookies">
+            <p class="legal-section-num">05 / 11</p>
+            <h2>Cookies &amp; Tracking Technologies</h2>
+            <p>Our website uses cookies and similar tracking technologies to enhance your browsing experience and analyse site traffic. The types of cookies we use include:</p>
+            <ul>
+              <li><strong style="color: var(--text-white);">Essential Cookies:</strong> Necessary for the website to function properly. These cannot be disabled.</li>
+              <li><strong style="color: var(--text-white);">Analytics Cookies:</strong> Help us understand how visitors interact with our website (e.g., Google Analytics). Data is aggregated and anonymised.</li>
+              <li><strong style="color: var(--text-white);">Preference Cookies:</strong> Remember your settings and preferences for a better experience on return visits.</li>
+            </ul>
+            <p>You can control or disable cookies through your browser settings. However, disabling certain cookies may affect the functionality of the website. By continuing to use our website, you consent to the use of cookies as described in this policy.</p>
+          </div>
+
+          <!-- Section 6 -->
+          <div class="legal-section" id="your-rights">
+            <p class="legal-section-num">06 / 11</p>
+            <h2>Your Rights</h2>
+            <p>Under applicable data protection laws including India's Digital Personal Data Protection Act, 2023, you have the following rights concerning your personal data:</p>
+            <ul>
+              <li><strong style="color: var(--text-white);">Right to Access:</strong> Request a copy of the personal data we hold about you.</li>
+              <li><strong style="color: var(--text-white);">Right to Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+              <li><strong style="color: var(--text-white);">Right to Erasure:</strong> Request deletion of your data where it is no longer necessary for the purposes collected.</li>
+              <li><strong style="color: var(--text-white);">Right to Withdraw Consent:</strong> Withdraw consent at any time for communications or marketing.</li>
+              <li><strong style="color: var(--text-white);">Right to Grievance Redressal:</strong> Lodge a complaint with us or with a relevant authority regarding our data practices.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us at <a href="mailto:info@vrcare.in" style="color: var(--primary-teal); text-decoration: none;">info@vrcare.in</a>. We will respond to all requests within 30 days.</p>
+          </div>
+
+          <!-- Section 7 -->
+          <div class="legal-section" id="data-retention">
+            <p class="legal-section-num">07 / 11</p>
+            <h2>Data Retention</h2>
+            <p>We retain your personal information only for as long as is necessary to fulfil the purposes described in this Privacy Policy, or as required by applicable law. Specifically:</p>
+            <ul>
+              <li>Consultation and enquiry data is retained for a period of 3 years from the last interaction.</li>
+              <li>Financial and contractual records are retained as required by Indian tax and corporate law (typically 7 years).</li>
+              <li>Website analytics data is retained in anonymised, aggregated form.</li>
+            </ul>
+            <p>Once data is no longer required, we securely delete or anonymise it.</p>
+          </div>
+
+          <!-- Section 8 -->
+          <div class="legal-section" id="third-party-links">
+            <p class="legal-section-num">08 / 11</p>
+            <h2>Third-Party Links</h2>
+            <p>Our website may contain links to third-party websites, including scheduling tools (Calendly), social media platforms (LinkedIn, Facebook, Instagram, WhatsApp), and mapping services (Google Maps). These third-party sites have their own privacy policies, and we do not accept any responsibility or liability for their policies or practices.</p>
+            <p>We encourage you to read the privacy notice of every website you visit when leaving our website.</p>
+          </div>
+
+          <!-- Section 9 -->
+          <div class="legal-section" id="children-privacy">
+            <p class="legal-section-num">09 / 11</p>
+            <h2>Children's Privacy</h2>
+            <p>Our website and services are directed exclusively at healthcare professionals, hospital administrators, and institutional decision-makers. We do not knowingly collect personal information from individuals under the age of 18.</p>
+            <p>If we become aware that a child has provided us with personal information without appropriate consent, we will promptly delete such information from our records.</p>
+          </div>
+
+          <!-- Section 10 -->
+          <div class="legal-section" id="changes">
+            <p class="legal-section-num">10 / 11</p>
+            <h2>Changes to This Policy</h2>
+            <p>We reserve the right to update or modify this Privacy Policy at any time. When we make material changes, we will update the "Last Updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+            <p>Your continued use of our website following any changes constitutes your acceptance of the revised policy. If you do not agree with any changes, please discontinue use of our website.</p>
+          </div>
+
+          <!-- Section 11 -->
+          <div class="legal-section" id="contact-privacy">
+            <p class="legal-section-num">11 / 11</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please reach out to us through any of the following channels:</p>
+
+            <div class="legal-contact-card">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h4>VR Care India</h4>
+                <p>First Floor, Pinnacle Business Park, Andheri East, Mumbai</p>
+                <a href="mailto:info@vrcare.in">info@vrcare.in</a><br>
+                <a href="tel:+919326330109" style="margin-top: 4px; display: inline-block;">+91 93263 30109</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="logo.png" alt="VR Care Logo">
+            <span class="footer-logo-text">VR Care</span>
+          </div>
+          <p class="footer-tagline">Transforming Healthcare, One Hospital at a Time. India's trusted partner in hospital operations and excellence.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/vrcareHospitalManagement" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/vrcareindia/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/-afzali9/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://wa.me/919326330109" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About VR Care</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="global-healthcare-leaders-circle/index.html">Leaders Circle</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <ul class="footer-links">
+            <li><a href="hospital-operations-and-management/index.html">Operations &amp; Management</a></li>
+            <li><a href="hospital-operational-and-management-audit/index.html">Operational Audit</a></li>
+            <li><a href="hospital-o-and-m-pricing/index.html">O&amp;M Pricing</a></li>
+            <li><a href="hospital-turnaround-and-profitability/index.html">Turnaround &amp; Profitability</a></li>
+            <li><a href="new-hospital-project-planning/index.html">Project Planning</a></li>
+            <li><a href="nabh-jci-and-international-healthcare-accreditations/index.html">NABH &amp; JCI Accreditations</a></li>
+            <li><a href="hospital-feasibility-study-dpr/index.html">Feasibility Study &amp; DPR</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>First Floor, Pinnacle Business Park, Andheri East, Mumbai</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+91 93263 30109</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>info@vrcare.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VR Care India. All Rights Reserved.</p>
+        <p class="footer-disclaimer">Disclaimer: All services are advisory and operational in nature. VR Care does not provide direct medical treatment or clinical care.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html" style="color: var(--primary-teal);">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Call Button -->
+  <a href="tel:+919326330109" class="phone-float" aria-label="Call us">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  </a>
+  <a href="https://wa.me/919326330109" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
